@@ -1,0 +1,14 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+replicate
+langchain
+langchain-community
+ipykernel
+chromadb
+streamlit
+openai
+python-dotenv
+huggingface_hub
