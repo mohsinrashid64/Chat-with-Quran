@@ -25,7 +25,7 @@ st.title('Chat with Quran')
 
 if 'history' not in st.session_state:
     st.session_state['history'] = []
-
+#
 prompt = st.chat_input("Ask Something")
 response = None
 if prompt:
