@@ -1,8 +1,6 @@
 import os
 import streamlit as st
 from dotenv import load_dotenv
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
 from langchain_openai import OpenAI
@@ -32,8 +30,8 @@ prompt = st.chat_input("Ask Something")
 response = None
 if prompt:
     st.session_state['history'].append(("user", prompt))
-    response = chain.run(prompt)
-    st.session_state['history'].append(("ai", response))
+    response = chain.invoke(prompt)
+    st.session_state['history'].append(("ai", response['result']))
 
 
 
