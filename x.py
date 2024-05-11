@@ -9,10 +9,7 @@ st.title('Chat with Quran')
 if 'history' not in st.session_state:
     st.session_state['history'] = []
 
-def func():
-    print('FUNC CALLED')
-
-prompt = st.text_input("Say something",on_change=func)
+prompt = st.text_input("Say something")
 response = None
 if prompt:
     # Add the user's prompt to the history
@@ -25,5 +22,3 @@ if prompt:
 for speaker, text in st.session_state['history']:
     with st.chat_message(speaker, avatar=None):
         st.write(text)
-
-
