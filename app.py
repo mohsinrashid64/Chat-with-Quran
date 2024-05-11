@@ -3,8 +3,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from langchain_community.vectorstores import Chroma
 from langchain.chains import RetrievalQA
-from langchain_openai import OpenAI
-from langchain_openai import OpenAIEmbeddings
+from langchain_openai import OpenAI, OpenAIEmbeddings
 
 
 load_dotenv()
