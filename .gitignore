@@ -118,6 +118,7 @@ celerybeat.pid
 
 TinyLlama-1.1B-Chat-v1.0.Q5_K_M.llamafile.exe
 
+
 # SageMath parsed files
 *.sage.py
 
@@ -163,3 +164,8 @@ cython_debug/
 /models
 TinyLlama-1.1B-Chat-v1.0.Q5_K_M.llamafile.exe
 *.exe
+<<<<<<< Updated upstream
+/llama-cpp-python
+=======
+llama-cpp-python/
+>>>>>>> Stashed changes
